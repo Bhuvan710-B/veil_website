@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"components/ui/liquid-metal-hero.tsx -> @paper-design/shaders-react\":{\"id\":\"components/ui/liquid-metal-hero.tsx -> @paper-design/shaders-react\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_paper-design_shaders-react_dist_index_js.js\"]}}"

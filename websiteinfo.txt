@@ -1,0 +1,252 @@
+========================================
+VEIL AI — WEBSITE INFO & DESIGN DIRECTION
+========================================
+Prepared for: Team Obscura | Smart India Hackathon 2026
+Problem Statement: SIH26171 — On-device Visual Perception for Light-weight Browser Agents
+
+
+----------------------------------------
+1. BRAND NAME
+----------------------------------------
+Veil (product name: Veil AI, also stylized as "veil.")
+
+Naming rationale: A "veil" conceals what shouldn't be seen while letting everything else through.
+That's exactly the product's function — it sits between the browser and the AI, letting automation
+happen while keeping sensitive data covered.
+
+
+----------------------------------------
+2. TAGLINE
+----------------------------------------
+Primary:      "See less. Do more."
+Alternates:
+  - "Privacy by architecture, not just policy."
+  - "The privacy layer between your browser and AI."
+  - "AI that acts. Data that stays."
+
+
+----------------------------------------
+3. ONE-LINER
+----------------------------------------
+Veil is a local privacy layer for AI browser agents — it reads, redacts, and reasons about a webpage
+entirely on-device, then shares only sanitized context with AI planning, so passwords, PII, and
+credentials never leave the browser.
+
+
+----------------------------------------
+4. BRAND VOICE
+----------------------------------------
+- Calm and confident, never alarmist — privacy is framed as an engineering guarantee, not a fear tactic.
+- Technical but readable: comfortable naming DOM extraction, ONNX, WebGPU, but never jargon-only.
+- Precise over promotional: prefers "sub-100ms local processing" to "blazing fast."
+- Quietly protective — the tone of a careful colleague, not a security siren.
+- Short, declarative sentences. Verbs lead: "Redact locally. Share safely. Act locally."
+- Avoids hype words like "revolutionary" or "game-changing"; earns trust through specificity instead.
+
+
+----------------------------------------
+5. COLORS
+----------------------------------------
+Primary palette (privacy / trust / tech):
+  - Veil Ink       #0B1220   (near-black navy — primary background/dark mode base)
+  - Veil White     #F7F8FA   (light backgrounds, breathing room)
+  - Signal Green   #1FAE6E   (redaction confirmed, "safe" status, primary CTA accent)
+  - Guard Purple   #6E5BD0   (secondary accent — used for "novelty," AI/planning elements)
+  - Caution Amber  #E8A23D   (medium-risk indicators, warnings, redaction highlights)
+  - Alert Red      #E5484D   (high-risk / blocked actions only — used sparingly)
+
+Neutral / supporting:
+  - Slate Gray     #5B6472   (body copy on light backgrounds)
+  - Mist Gray      #E4E7EC   (borders, dividers, card backgrounds)
+
+Usage principle: green = safe/redacted/verified, amber = medium risk, red = blocked — the same
+traffic-light logic used in-product for privacy status should carry through the entire site.
+
+
+----------------------------------------
+6. NAVIGATION MENU
+----------------------------------------
+Logo: "veil." (lowercase wordmark with period, left-aligned)
+
+Menu items:
+  - Product        (How Veil works: See → Redact → Share → Act)
+  - Technology      (On-device engine, DOM + Vision, guardrails)
+  - Solutions       (AI Startups / Enterprises / Regulated Sectors)
+  - Pricing
+  - Docs
+  - Blog
+
+Right side:
+  - "Log in" (text link)
+  - "Get Early Access" (filled button, Signal Green)
+
+
+----------------------------------------
+7. HERO SECTION
+----------------------------------------
+Eyebrow tag: "PRIVACY-FIRST AI BROWSING"
+
+Headline: "Your AI agent shouldn't have to see your passwords to click a button."
+
+Subheadline: Veil sits between your browser and any AI agent — extracting structure, masking
+sensitive data, and sending only a sanitized context for planning. Raw pages never leave the device.
+
+Primary CTA: "Get Early Access"
+Secondary CTA: "Watch it redact live" (opens interactive demo)
+
+Visual: A live, animated browser mockup showing a form field with an Aadhaar/PAN number being
+detected and replaced in real time with "[REDACTED_AADHAAR]" as a small badge — reinforcing
+the product promise without needing copy.
+
+Micro-trust line under CTAs: "No raw data ever leaves your device."
+
+
+----------------------------------------
+8. SHADERS / BACKGROUNDS
+----------------------------------------
+Visual direction: dark, quiet, technical — not flashy.
+
+  - Hero background: deep Veil Ink (#0B1220) base with a subtle animated mesh/particle shader
+    resembling a redacted DOM tree — faint node-and-edge lines that occasionally "blur out" a
+    node (simulating a redaction event), then resolve back. Motion should be slow, ambient,
+    non-distracting.
+  - Section dividers: soft gradient wipes from Veil Ink to Veil White, echoing the product's
+    "local → sanitized → cloud" data journey (dark = raw/local, light = sanitized/shared).
+  - Feature section background: faint grid pattern (representing DOM/bounding boxes) at 4-6%
+    opacity, Mist Gray on white.
+  - Hover/interaction shader: on redaction-themed cards, a short "scan line" sweep effect in
+    Signal Green suggests real-time detection.
+  - Avoid: neon glows, glassmorphism excess, anything that reads as "generic AI startup purple
+    gradient." The tone should feel closer to a security/dev-tools product (e.g. Vercel, 1Password)
+    than a consumer AI app.
+
+
+----------------------------------------
+9. SCROLL AREAS
+----------------------------------------
+- Horizontal scroll-snap strip in the "How It Works" section, animating through the six pipeline
+  stages: Browser → Local Extraction → Local Redaction → Send Sanitized Context → AI Planning →
+  Validation & Execution. Each stage pins briefly with a short caption and icon.
+- Vertical scroll-triggered reveal in "Technical Approach": as the user scrolls, the six-layer
+  architecture diagram (User Input → Perception → Understanding & Planning → Action Execution →
+  Privacy & Metrics → User Feedback) builds itself layer by layer.
+- Sticky side-nav on the Technology page that highlights the active layer (DOM Analysis / Vision
+  Analysis / Guardrails / Action Executor) as the user scrolls past each corresponding section.
+- Testimonial/logos row: slow auto-scrolling marquee for "Built for" customer segments (AI Startups,
+  SaaS Teams, Enterprises, Regulated Sectors) — pauses on hover.
+
+
+----------------------------------------
+10. FEATURES SECTION
+----------------------------------------
+Section heading: "Privacy enforced before AI planning, not after."
+
+Feature cards (4-up grid):
+
+  1. See Locally
+     Reads webpage structure, DOM elements, and viewport entirely on-device — no page content is
+     transmitted just to be understood.
+
+  2. Redact Locally
+     Detects and masks PII, passwords, card numbers, emails, faces, and API keys before anything
+     leaves the browser.
+
+  3. Share Safely
+     Sends only sanitized screenshots, page maps, roles, and redaction manifests to the AI
+     planning layer — never raw content.
+
+  4. Act Locally
+     Validates every AI-proposed action against local policy and executes it inside the browser,
+     with the user in the approval loop for sensitive steps.
+
+Secondary feature strip (icons + short labels):
+  - On-device DOM + Vision fallback (ONNX / WebGPU)
+  - Guardrail layer: prompt-injection detection, schema validation, banned-term scanning
+  - Encrypted local data store for credentials, preferences, and history
+  - Live privacy metrics (PLR, FNR, MER) and SAFE / MEDIUM / RISK status
+
+
+----------------------------------------
+11. PRICING SECTION
+----------------------------------------
+Section heading: "Pricing that scales with how much you automate."
+
+Plans (aligned to the business model: B2B SaaS, Enterprise, API/SDK, White-Label):
+
+  - Starter (B2B SaaS)
+    For individual developers and small teams testing AI browser agents.
+    Per-seat / per-agent pricing. Includes on-device redaction, standard guardrails, community docs.
+
+  - Team
+    For SaaS teams automating sensitive workflows.
+    Per-agent pricing with usage tiers. Adds privacy metrics dashboard, shared policy templates,
+    priority support.
+
+  - Enterprise
+    For organizations protecting internal browser activity at scale.
+    Annual license with security integration, SSO, custom redaction policies, dedicated onboarding.
+    "Contact Sales."
+
+  - API / SDK
+    For developers building on top of Veil.
+    Usage-based pricing. Full access to the redaction and policy engine as a drop-in layer for
+    existing AI-agent platforms (white-label option available).
+
+Footnote under pricing: "Finance, healthcare, and government teams — talk to us about regulated
+deployments."
+
+
+----------------------------------------
+12. CALLS TO ACTION
+----------------------------------------
+Primary (used in hero, nav, footer): "Get Early Access"
+Secondary: "Watch it redact live" / "See the demo"
+Docs/technical audience: "Read the architecture"
+Pricing page: "Talk to Sales" (Enterprise), "Start Free" (Starter/Team)
+Footer newsletter: "Get product updates, no spam."
+Closing section CTA: "Give your AI agent eyes, not access."
+
+
+----------------------------------------
+13. CARDS
+----------------------------------------
+Card types used across the site, all sharing rounded corners, soft shadows, and a colored
+top-accent bar tied to category color:
+
+  - Pipeline Step Card (used in How It Works): icon, step number, title, one-line description.
+    Example: "01 — See Locally: Reads webpage structure, DOM elements, and viewport on-device."
+
+  - Risk Status Card (used in product demo/screenshot sections): shows a field name, detected
+    type (e.g. "Aadhaar"), and redaction badge (color-coded SAFE/MEDIUM/RISK).
+
+  - Solution/Persona Card (used in Solutions section): icon, audience name (AI Startups, SaaS
+    Teams, Enterprises, Regulated Sectors), and a one-sentence value statement.
+
+  - Challenge Card (used in an honesty/roadmap section): pairs a challenge with how Veil addresses
+    it — e.g. "Accurate PII detection → continuously tuned detection models to avoid false flags."
+
+  - Pricing Card: plan name, price/pricing model, feature checklist, CTA button.
+
+
+----------------------------------------
+14. FOOTER
+----------------------------------------
+Column 1 — Brand:
+  "veil." wordmark + one-line descriptor: "The privacy layer between your browser and AI."
+  Social icons: X (Twitter), LinkedIn, GitHub.
+
+Column 2 — Product:
+  How It Works, Technology, Guardrails, Privacy Metrics, Changelog
+
+Column 3 — Solutions:
+  AI Startups, SaaS Teams, Enterprises, Regulated Sectors (Finance / Healthcare / Government)
+
+Column 4 — Company:
+  About, Blog, Careers, Contact
+
+Column 5 — Resources:
+  Documentation, API Reference, Security & Privacy, Status Page
+
+Bottom bar:
+  "© 2026 Veil AI (Team Obscura). All rights reserved."  |  Privacy Policy  |  Terms of Service
+  Small print: "All processing happens locally in the browser. No raw data leaves the device."

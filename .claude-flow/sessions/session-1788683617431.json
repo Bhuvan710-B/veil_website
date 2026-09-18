@@ -1,0 +1,15 @@
+{
+  "id": "session-1788683617431",
+  "startedAt": "2026-09-06T08:33:37.431Z",
+  "cwd": "/Users/bhuvanbhandari/Downloads/web_veil",
+  "context": {},
+  "metrics": {
+    "edits": 0,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "restoredAt": "2026-09-06T08:35:05.047Z",
+  "endedAt": "2026-09-06T08:35:05.056Z",
+  "duration": 87626
+}
